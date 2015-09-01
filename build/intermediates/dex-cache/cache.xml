@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\project_cms50dj_jar.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="6c7b1b1ed01fdf3af5470a6a265a5b10461acb35">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\project_cms50dj_jar-809896cf28f300da3cfb67f19af04babe27430f9.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\commons-lang3-3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="905075e6c80f206bbe6cf1e809d2caa69f420c76">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\commons-lang3-3.1-236b5094623290878e91dfec09df1f47c28cce12.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\junit.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="543b0ae86f3e65fbf14ecac169d0c87cbb622e71">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\junit-fe9f472ad3a2d6f21d7ec2ba48a0b802cb6f6005.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\sqlcipher-2.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="00f02373da141e608b4a0c94cfe508de3b997fac">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\sqlcipher-2.2.0-6f41261340c6d65f48669113adc1625d6bdbe1ac.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\robotium-solo-5.4.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8cf467c87b83c959fd7e8aef842127abce72fc5c">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\robotium-solo-5.4.1-dd7c4675f0d6e40f0d0314fdec300c9907c45d62.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0-1844b924524f75e83bc0f798744878791b6eb84f.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\jackson-all-1.6.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="592efa2290710830f989b82c198fcee17b86d18a">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\jackson-all-1.6.1-eb4e036e89e7bd0ab6747a4150840a398087cfa3.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\prettytime-1.0.8.final.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="375ffaa7ed63d563978dc9c0a835f719e8088501">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\prettytime-1.0.8.final-f3a4d3ce077da42ca1615e698b92d2a7aecccc0c.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\commons-io-2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fd51f906669f49a4ffd06650666c3b8147a6106e">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\commons-io-2.1-ff408da58532defe5c255024f279204dc2bc9db0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Santosh\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\18.0\cce0823396aa693798f8882e64213b1772032b09\guava-18.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\guava-18.0-4a5a4b1eec17d6ff73eb8da1810a0979b485be42.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\commons-codec-1.6.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="b7f0fc8f61ecadeb3695f0b9464755eee44374d4">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\commons-codec-1.6-d2ed7c129fe80223aa087a7d6e2814df685e92d9.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\mockito-all-1.9.5.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="79a8984096fc6591c1e3690e07d41be506356fa5">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\mockito-all-1.9.5-f3979c4317ce17b020d7154b7a6b26f9f26368f4.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\classes-be87f7bc5a0930e901484e606e9caf0e9d948b07.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\CONTEC08A_SDK v1.6.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7caf65fd12bf712c064b8e2a082e799ac9b65bcf">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\CONTEC08A_SDK v1.6-c520bfe9617e4d7f393dad22b959266222d3b748.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\CMSSXT_SDK v1.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="941faf3895f12d7a1fe2398ca75764676dddad92">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\CMSSXT_SDK v1.2-a4c019517dd23a3e8b32634303a082b7b1c9f0cd.jar" />
+    </item>
+    <item
+        jar="F:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-06ed65caa17c1f5493448b5775d90f01ca509474.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\rhino-1.7R4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e982f2136574b9a423186fbaeaaa98dc3e5a5288">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\rhino-1.7R4-45b5a01d45ff44ae3e4a8413eb60a398c1d626e7.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\acra-4.5.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="44a5eb946e0d83eed4a0128d877ca1fd8168b83a">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\acra-4.5.0-de53da161066e02a3781e82895f5e5ea12645dc1.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\exploded-aar\com.diogobernardino\williamchart\2.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e209ebfa37d4dd762092a8fc4b68c4a93b07b17f">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\classes-bffc715bbd661bfd621f635379f927505c05a969.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-5ef782fa126be40da30ac59a3c7b227e0cc0235a.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\Sonoline-S_SDK v1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ab05d9c87ac1ec7073dbe4e9a5c2cd1e0898edcd">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\Sonoline-S_SDK v1.0-66582df23309f0f4402ff33825ffe34e6502b714.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\EarTemperature_SDK.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5debef3ca669bbbb748f16f8f8db24029111d011">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\EarTemperature_SDK-ae0e167dee12c814f16df1e4ecb2458994b52e78.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="37bf8de5b4f9e7e93006db783b9b3168e32e38e9">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\classes-e01c992584872520a393c648d87f7b467911b36e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Santosh\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.0\752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d\joda-time-2.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\joda-time-2.0-03ab3ad20f7e065ea57d1a4e7341d06bd585584c.jar" />
+    </item>
+    <item
+        jar="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\libs\hellocharts-library-1.5.6.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="0935cbfbfabbc6c8c24182a0a94fb374dd8144c4">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\hellocharts-library-1.5.6-5f889aa80c21a45be2f76a833320ad395291aba7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Santosh\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.2\1f96456ca233dec780aa224bff076d8e8bca3908\gson-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
+        <dex dex="F:\E-Drive\Projects\AndroidProjects\Telemedicine\drishti\dristhi-app\app\build\intermediates\pre-dexed\debug\gson-2.2.2-935c9a52e7e6a4302faab8e555b99bad73a39a87.jar" />
+    </item>
+
+</items>
