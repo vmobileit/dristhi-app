@@ -176,7 +176,6 @@ public class NativePNCSmartRegisterActivity extends SecuredNativeSmartRegisterAc
         }
     }
 
-
     private class UpdateDialogOptionModel implements DialogOptionModel {
         @Override
         public DialogOption[] getDialogOptions() {
@@ -188,4 +187,7 @@ public class NativePNCSmartRegisterActivity extends SecuredNativeSmartRegisterAc
             onEditSelection((EditOption) option, (SmartRegisterClient) tag);
         }
     }
+
 }
+
+

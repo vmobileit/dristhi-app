@@ -3,8 +3,8 @@ package org.ei.telemedicine.test.domain;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
-import static org.ei.drishti.domain.ReportIndicator.CONDOM;
-import static org.ei.drishti.domain.ReportIndicator.parseToReportIndicator;
+import static org.ei.telemedicine.domain.ReportIndicator.CONDOM;
+import static org.ei.telemedicine.domain.ReportIndicator.parseToReportIndicator;
 
 public class ReportIndicatorTest {
 

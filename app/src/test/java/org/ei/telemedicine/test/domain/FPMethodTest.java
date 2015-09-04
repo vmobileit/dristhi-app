@@ -1,12 +1,11 @@
 package org.ei.telemedicine.test.domain;
 
-import org.robolectric.RobolectricTestRunner;
+import org.ei.telemedicine.domain.FPMethod;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static junit.framework.Assert.assertEquals;
 
-@RunWith(RobolectricTestRunner.class)
 public class FPMethodTest {
 
     @Test

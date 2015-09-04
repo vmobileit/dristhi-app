@@ -1,6 +1,7 @@
 package org.ei.telemedicine.test.view.activity;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.test.suitebuilder.annotation.MediumTest;
 
 import static org.ei.telemedicine.domain.LoginResponse.UNKNOWN_RESPONSE;
 import static org.ei.telemedicine.domain.LoginResponse.SUCCESS;
@@ -38,15 +39,8 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         solo = new DrishtiSolo(getInstrumentation(), getActivity());
     }
 
-    public void ignoreTestShouldAllowLoginWithoutCheckingRemoteLoginWhenLocalLoginSucceeds() throws Exception {
-        userService.setupFor("user", "password", true, true, UNKNOWN_RESPONSE);
-
-        solo.assertCanLogin("user", "password");
-
-        userService.assertOrderOfCalls("local", "login");
-    }
-
-    public void ignoreTestShouldTryRemoteLoginWhenThereIsNoRegisteredUser() throws Exception {
+    /*@MediumTest
+    public void testIgnoreTestShouldTryRemoteLoginWhenThereIsNoRegisteredUser() throws Exception {
         userService.setupFor("user", "password", false, false, SUCCESS);
 
         solo.assertCanLogin("user", "password");
@@ -54,7 +48,19 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         userService.assertOrderOfCalls("remote", "login");
     }
 
-    public void ignoreTestShouldFailToLoginWhenBothLoginMethodsFail() throws Exception {
+    @MediumTest
+    public void testIgnoreTestShouldAllowLoginWithoutCheckingRemoteLoginWhenLocalLoginSucceeds() throws Exception {
+        userService.setupFor("user", "password", true, true, UNKNOWN_RESPONSE);
+
+        solo.assertCanLogin("user", "password");
+
+        userService.assertOrderOfCalls("local", "login");
+    }
+
+
+
+    @MediumTest
+    public void testIgnoreTestShouldFailToLoginWhenBothLoginMethodsFail() throws Exception {
         userService.setupFor("user", "password", false, false, UNKNOWN_RESPONSE);
 
         solo.assertCannotLogin("user", "password");
@@ -62,19 +68,21 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         userService.assertOrderOfCalls("remote");
     }
 
-    public void ignoreTestShouldNotTryRemoteLoginWhenRegisteredUserExistsEvenIfLocalLoginFails() throws Exception {
+    @MediumTest
+    public void testIgnoreTestShouldNotTryRemoteLoginWhenRegisteredUserExistsEvenIfLocalLoginFails() throws Exception {
         userService.setupFor("user", "password", true, false, SUCCESS);
 
         solo.assertCannotLogin("user", "password");
         userService.assertOrderOfCalls("local");
     }
 
-    public void ignoreTestShouldNotTryLocalLoginWhenRegisteredUserDoesNotExist() throws Exception {
+    @MediumTest
+    public void testIgnoreTestShouldNotTryLocalLoginWhenRegisteredUserDoesNotExist() throws Exception {
         userService.setupFor("user", "password", false, true, SUCCESS);
 
         solo.assertCanLogin("user", "password");
         userService.assertOrderOfCalls("remote", "login");
-    }
+    }*/
 
 
 
