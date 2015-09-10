@@ -21,9 +21,6 @@ public class NativeANCSmartRegisterActivityTest extends ActivityInstrumentationT
             super(NativeANCSmartRegisterActivity.class);
         }
 
-
-
-
         @Override
         protected void setUp() throws Exception {
             super.setUp();
@@ -32,9 +29,8 @@ public class NativeANCSmartRegisterActivityTest extends ActivityInstrumentationT
         }
 
         @Test
-        public void pressingNewRegisterButtonShouldOpenECRegistrationFormActivity() {
-            ecActivity.findViewById(R.id.register_client)
-                    .performClick();
+        public void testPressingNewRegisterButtonShouldOpenECRegistrationFormActivity() {
+            ecActivity.findViewById(R.id.register_client).performClick();
             verifyLaunchOfActivityOnPressingButton(R.id.register_client, FormActivity.class);
 
 

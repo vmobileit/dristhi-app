@@ -8,6 +8,7 @@ android {
         applicationId "org.ei.telemedicine"
         minSdkVersion 16
         targetSdkVersion 16
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -17,6 +18,8 @@ android {
         }
     }
     packagingOptions {
+        exclude 'LICENSE.txt'
+
         exclude 'META-INF/INDEX.LIST'
         exclude 'META-INF/DEPENDENCIES.txt'
         exclude 'META-INF/LICENSE.txt'
@@ -61,5 +64,18 @@ dependencies {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+    //testCompile 'junit:junit:4.12'
+    // required if you want to use Mockito for unit tests
+    //testCompile 'org.mockito:mockito-core:1.+'
+    // required if you want to use Mockito for Android instrumentation tests
+    //androidTestCompile 'org.mockito:mockito-core:1.+'
+    //androidTestCompile "com.google.dexmaker:dexmaker:1.2"
+    //androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
+
+    compile 'com.google.dexmaker:dexmaker:1.0'
+    compile 'com.google.dexmaker:dexmaker-mockito:1.0'
+    compile 'org.mockito:mockito-core:1.9.5'
+    /*compile ('org.mockito:mockito-core:1.+'){
+        exclude group: 'org.hamcrest'
+    }*/
 }

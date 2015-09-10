@@ -18,10 +18,8 @@ import org.ei.telemedicine.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.mockito.internal.util.collections.ArrayUtils;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import static org.ei.telemedicine.AllConstants.GraphFields.BLOODGLUCOSEDATA;
 import static org.ei.telemedicine.AllConstants.GraphFields.BP_DIA;

@@ -1,5 +1,7 @@
 package org.ei.telemedicine.test.view.preProcessor;
 
+import android.test.AndroidTestCase;
+
 import org.ei.telemedicine.Context;
 import org.ei.telemedicine.R;
 import org.ei.telemedicine.util.DateUtil;
@@ -19,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-public class PNCClientPreProcessorTest {
+public class PNCClientPreProcessorTest extends AndroidTestCase{
     @Mock
     Context mockedContext;
     private Context realContext;

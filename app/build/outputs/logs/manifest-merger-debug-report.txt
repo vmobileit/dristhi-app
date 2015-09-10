@@ -115,6 +115,7 @@ ADDED from AndroidManifest.xml:53:5
 		ADDED from AndroidManifest.xml:54:9
 uses-sdk
 ADDED from AndroidManifest.xml:57:5
+MERGED from com.android.support:multidex:1.0.1:18:5
 MERGED from com.diogobernardino:williamchart:2.0.1:6:5
 MERGED from com.android.support:support-v4:21.0.3:15:5
 MERGED from com.jjoe64:graphview:4.0.1:7:5
