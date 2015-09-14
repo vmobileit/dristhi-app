@@ -30,7 +30,6 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.ei.telemedicine.AllConstants.*;
 
-@RunWith(MockitoJUnitRunner.class)
 public class ANCDetailController {
     public static final int DURATION_OF_PREGNANCY_IN_WEEKS = 40;
     private final Context context;
