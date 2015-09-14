@@ -101,8 +101,6 @@ public class ActionServiceTest {
         verify(drishtiService).fetchNewActions("ANM X", "1234");
         verify(actionRouter).directAlertAction(action);
 
-        assertEquals("a", "b");
-        assertEquals("a", "a");
     }
 
     @Test

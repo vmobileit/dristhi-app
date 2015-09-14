@@ -9,7 +9,9 @@ import org.ei.telemedicine.service.BeneficiaryService;
 import org.ei.telemedicine.view.contract.Beneficiary;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.List;
 
@@ -19,6 +21,7 @@ import static org.ei.telemedicine.util.EasyMap.mapOf;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
+@RunWith(MockitoJUnitRunner.class)
 public class BeneficiaryServiceTest {
     @Mock
     private AllBeneficiaries allBeneficiaries;

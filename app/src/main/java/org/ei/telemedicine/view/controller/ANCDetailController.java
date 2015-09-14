@@ -20,6 +20,8 @@ import org.joda.time.LocalDate;
 import org.joda.time.Months;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,6 +30,7 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.ei.telemedicine.AllConstants.*;
 
+@RunWith(MockitoJUnitRunner.class)
 public class ANCDetailController {
     public static final int DURATION_OF_PREGNANCY_IN_WEEKS = 40;
     private final Context context;

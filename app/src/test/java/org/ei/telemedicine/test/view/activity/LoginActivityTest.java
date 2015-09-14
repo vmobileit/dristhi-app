@@ -39,7 +39,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         solo = new DrishtiSolo(getInstrumentation(), getActivity());
     }
 
-    /*@MediumTest
+    @MediumTest
     public void testIgnoreTestShouldTryRemoteLoginWhenThereIsNoRegisteredUser() throws Exception {
         userService.setupFor("user", "password", false, false, SUCCESS);
 
@@ -82,7 +82,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 
         solo.assertCanLogin("user", "password");
         userService.assertOrderOfCalls("remote", "login");
-    }*/
+    }
 
 
 
@@ -90,7 +90,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
     public void tearDown() throws Exception {
         waitForFilteringToFinish();
         waitForProgressBarToGoAway(getActivity());
-        //solo.finishOpenedActivities();
+        solo.finishOpenedActivities();
     }
 
 

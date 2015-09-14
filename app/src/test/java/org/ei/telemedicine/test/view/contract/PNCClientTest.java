@@ -1,12 +1,15 @@
 package org.ei.telemedicine.test.view.contract;
 
 import junit.framework.Assert;
+
 import org.ei.telemedicine.util.EasyMap;
 import org.ei.telemedicine.view.contract.AlertDTO;
 import org.ei.telemedicine.view.contract.ServiceProvidedDTO;
 import org.ei.telemedicine.view.contract.Visits;
 import org.ei.telemedicine.view.contract.pnc.PNCClient;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +17,7 @@ import java.util.Map;
 
 import static java.util.Arrays.asList;
 
+@RunWith(MockitoJUnitRunner.class)
 public class PNCClientTest {
     @Test
     public void shouldAddPNCAlertToServiceToVisitMap() throws Exception {
