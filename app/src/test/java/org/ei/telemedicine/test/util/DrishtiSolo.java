@@ -36,7 +36,7 @@ public class DrishtiSolo extends Solo {
 
     public void logout() {
         sendKey(MENU);
-        clickOnActionBarItem(3);
+        clickOnActionBarItem(2);
         //clickOnText("Logout");
         waitForActivity(LoginActivity.class.getSimpleName());
     }

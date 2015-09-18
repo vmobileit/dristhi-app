@@ -1,7 +1,9 @@
 package org.ei.telemedicine.test.util;
 
 
+import org.ei.telemedicine.Context;
 import org.ei.telemedicine.domain.LoginResponse;
+import org.ei.telemedicine.repository.AllSharedPreferences;
 import org.ei.telemedicine.service.UserService;
 import org.ei.telemedicine.util.Session;
 
@@ -20,7 +22,7 @@ public class FakeUserService extends UserService {
     private Session session;
 
     public FakeUserService() {
-        super(null, null, null, null, null, null, null);
+        super(null, null, new AllSharedPreferences(Context.getInstance().getShared()), null, null, null, null);
     }
 
     @Override
@@ -44,8 +46,8 @@ public class FakeUserService extends UserService {
         assertExpectedCredentials(userName, password);
     }
 
-
-    public void remoteLogin(String userName, String password, String anmLocation) {
+    @Override
+    public void remoteLogin(String userName, String password, String userRole, String anmLocation, String anmDrugs, String anmConfig) {
         super.setupContextForLogin(userName, password);
         actualCalls.add("login");
         assertExpectedCredentials(userName, password);

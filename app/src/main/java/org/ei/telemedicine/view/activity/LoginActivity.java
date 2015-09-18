@@ -244,8 +244,8 @@ public class LoginActivity extends Activity {
     }
 
     private void goToHome(String userRole) {
-        startActivity(new Intent(this, (userRole.equals(AllConstants.ANM_ROLE)) ? NativeHomeActivity.class : NativeDoctorActivity.class));
-        finish();
+            startActivity(new Intent(this, (userRole.equals(AllConstants.ANM_ROLE)) ? NativeHomeActivity.class : NativeDoctorActivity.class));
+            finish();
     }
 
     private String getVersion() throws PackageManager.NameNotFoundException {

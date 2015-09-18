@@ -11,6 +11,7 @@ import static org.ei.telemedicine.test.util.Wait.waitForProgressBarToGoAway;
 
 import org.ei.telemedicine.Context;
 import org.ei.telemedicine.R;
+import org.ei.telemedicine.domain.LoginResponse;
 import org.ei.telemedicine.test.util.DrishtiSolo;
 import org.ei.telemedicine.test.util.FakeDrishtiService;
 import org.ei.telemedicine.test.util.FakeUserService;
@@ -70,7 +71,8 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 
     @MediumTest
     public void testIgnoreTestShouldNotTryRemoteLoginWhenRegisteredUserExistsEvenIfLocalLoginFails() throws Exception {
-        userService.setupFor("user", "password", true, false, SUCCESS);
+        //String payload = "{\"personal_info\":{},\"role\":\"ANM\"}";
+        userService.setupFor("user", "password", true, false, SUCCESS);//.withPayload(payload));
 
         solo.assertCannotLogin("user", "password");
         userService.assertOrderOfCalls("local");
