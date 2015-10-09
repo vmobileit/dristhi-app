@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import org.ei.telemedicine.view.contract.pnc.PNCClient;
+import org.ei.telemedicine.view.contract.pnc.PNCClients;
 import org.ei.telemedicine.view.controller.PNCSmartRegisterController;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.apache.commons.lang3.tuple.Pair;
@@ -34,7 +35,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-//@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 public class PNCSmartRegisterControllerTest {
     public static final String[] PNC_ALERTS = new String[]{
             "PNC 1"
@@ -54,11 +55,11 @@ public class PNCSmartRegisterControllerTest {
     private PNCSmartRegisterController controller;
     private Map<String, String> emptyMap;
 
-    /*@Before
+    @Before
     public void setUp() throws Exception {
         initMocks(this);
         emptyMap = Collections.emptyMap();
-        controller = new PNCSmartRegisterController(serviceProvidedService, alertService, allEligibleCouples, allBeneficiaries, new Cache<String>());
+        controller = new PNCSmartRegisterController(serviceProvidedService, alertService, allEligibleCouples, allBeneficiaries, new Cache<String>(), new Cache<PNCClients>());
     }
 
     @Test
@@ -75,10 +76,13 @@ public class PNCSmartRegisterControllerTest {
         PNCClient expectedClient3 = createPNCClient("Entity Y", "Woman C", "Bherya", "thayi 2", "2013-05-25").withECNumber("EC Number 3").withHusbandName("Husband C").withChildren(EMPTY_LIST).withEntityIdToSavePhoto("EC Case 3");
         when(allBeneficiaries.allPNCsWithEC()).thenReturn(asList(Pair.of(m1, ec2), Pair.of(m2, ec3), Pair.of(m3, ec1)));
 
-        String clients = controller.get();
+        //String clients = controller.get();
 
-        List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
-        }.getType());
+        //List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
+        //}.getType());
+
+        PNCClients actualClients = controller.getClients();
+
         assertEquals(asList(expectedClient1, expectedClient2, expectedClient3), actualClients);
     }
 
@@ -135,10 +139,12 @@ public class PNCSmartRegisterControllerTest {
                 .withChildren(asList(new ChildClient("child id 1", "male", "2.4", "thayi 1"), new ChildClient("child id 2", "female", "2.5", "thayi 1")))
                 .withServicesProvided(Collections.<ServiceProvidedDTO>emptyList());
 
-        String clients = controller.get();
+        // String clients = controller.getClients();
 
-        List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
-        }.getType());
+        //List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
+        //}.getType());
+
+        PNCClients actualClients = controller.getClients();
         assertEquals(asList(expectedPNCClient), actualClients);
     }
 
@@ -150,10 +156,14 @@ public class PNCSmartRegisterControllerTest {
         when(allBeneficiaries.allPNCsWithEC()).thenReturn(asList(Pair.of(mother, ec)));
         when(alertService.findByEntityIdAndAlertNames("Entity X", PNC_ALERTS)).thenReturn(asList(pnc1Alert));
 
-        String clients = controller.get();
+        //String clients = controller.get();
 
-        List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
-        }.getType());
+        // List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
+        // }.getType());
+
+
+        PNCClients actualClients = controller.getClients();
+
         verify(alertService).findByEntityIdAndAlertNames("Entity X", PNC_ALERTS);
         AlertDTO expectedAlertDto = new AlertDTO("PNC 1", "normal", "2013-01-01");
         PNCClient expectedEC = createPNCClient("Entity X", "Woman C", "Bherya", "thayi 1", "2013-05-25")
@@ -174,10 +184,13 @@ public class PNCSmartRegisterControllerTest {
         when(serviceProvidedService.findByEntityIdAndServiceNames("Entity X", PNC_SERVICES))
                 .thenReturn(asList(new ServiceProvided("entity id 1", "PNC 1", "2013-01-01", mapOf("dose", "100")), new ServiceProvided("entity id 1", "PNC 1", "2013-02-01", emptyMap)));
 
-        String clients = controller.get();
+        //String clients = controller.get();
 
-        List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
-        }.getType());
+        //List<PNCClient> actualClients = new Gson().fromJson(clients, new TypeToken<List<PNCClient>>() {
+        //}.getType());
+
+        PNCClients actualClients = controller.getClients();
+
         verify(alertService).findByEntityIdAndAlertNames("Entity X", PNC_ALERTS);
         verify(serviceProvidedService).findByEntityIdAndServiceNames("Entity X", PNC_SERVICES);
         List<ServiceProvidedDTO> expectedServicesProvided = asList(new ServiceProvidedDTO("PNC 1", "2013-01-01", mapOf("dose", "100")),
@@ -189,7 +202,7 @@ public class PNCSmartRegisterControllerTest {
                 .withServicesProvided(expectedServicesProvided)
                 .withChildren(EMPTY_LIST);
         assertEquals(asList(expectedEC), actualClients);
-    }*/
+    }
 
     private PNCClient createPNCClient(String entityId, String name, String village, String thayi, String deliveryDate) {
         return new PNCClient(entityId, village, name, thayi, deliveryDate)
